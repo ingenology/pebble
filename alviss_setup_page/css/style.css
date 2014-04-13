@@ -356,7 +356,12 @@ hr {
 }
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-
+@media screen and (max-width:535px) {
+        .logo {width:100px}
+        .btn-wrapper {margin-top:30px}
+        ul.cf {padding-left:0; width:300px; margin-right:auto; margin-left:auto;}
+        .md-modal {top:8%}
+}
 .close {
 	border: none;
 	width: 80px;
