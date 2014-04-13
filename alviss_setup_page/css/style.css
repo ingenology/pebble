@@ -1,0 +1,367 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+	width: 100%;
+	background-image: url("../img/stardust-darkb2.png");
+}
+
+/**
+ Clearfix
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* NAVIGATION
+=============
+*/
+
+.main {
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+.nav {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.logo {
+	padding-top: 20px;
+	display: inline-block;
+	position: relative;
+	width: 155px;
+}
+
+.btn-wrapper {
+	position: relative;
+	width: 155px;
+	margin: 0 auto;
+	margin-top: -45px;
+}
+
+.sync {
+	background-color: #323b5d;
+	width: 155px;
+	margin: 0 auto;
+	color: #f4f4f4;
+	font-size: 30px;
+	border: 2px solid #f4f4f4;
+	cursor: pointer;
+}
+
+.syncText {
+	text-align: center;
+	color: #455281;
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.username {
+	float: right;
+	padding-top: 18px;
+}
+
+.username img {
+	max-width: 30px;
+	border-radius: 100%;
+	display: inline;
+	float: left;
+}
+
+.username p {
+	float: left;
+	padding-top: 0;
+}
+
+.arrow {
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 7px 5px 0 5px;
+	border-color: #f4f4f4 transparent transparent transparent;
+	float: left;
+	margin-top: 12px;
+	margin-right: 20px;
+}
+
+.available {
+	width: 100%;
+}
+
+.available ul {
+	list-style: none;
+}
+
+.available li {
+	width: 200px;
+	height: 200px;
+	margin-right: 0 5px;
+	float: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.available li img {
+	border-radius: 100%;
+	width: 100%;
+}
+
+li.wrap {
+	margin: 20px 50px;
+}
+
+
+/* Animations ===========
+========================*/
+.w1 {
+	background: url('../img/calendar.png');
+}
+.w1b {
+	background: #a6b83b;
+	color: white;
+}
+
+.w2 {
+	background: url('../img/FamilyEvents.png');
+}
+.w2b {
+	background: #a6b83b;
+	color: white;
+}
+
+.w3 {
+	background: url('../img/GMTtime.png');
+}
+.w3b {
+	background: #a6b83b;
+	color: white;
+}
+
+.w4 {
+	background: url('../img/NATtime.png');
+}
+.w4b {
+	background: #a6b83b;
+	color: white;
+}
+
+.w5 {
+	background: #881e5e url('../img/music.png');
+}
+.w5b {
+	background: #881e5e;
+	color: white;
+}
+
+.w6 {
+	background: #881e5e url('../img/sleep.png');
+}
+.w6b {
+	background: #881e5e;
+	color: white;
+}
+
+.w7 {
+	background: #881e5e url('../img/timer.png');
+}
+.w7b {
+	background: #881e5e;
+	color: white;
+}
+
+.w8 {
+	background: #881e5e url('../img/weather.png');
+}
+.w8b {
+	background: #881e5e;
+	color: white;
+}
+
+.w9 {
+	background: #ec6041 url('../img/OxygenLevel.png');
+}
+.w9b {
+	background: #ec6041;
+	color: white;
+}
+
+.w10 {
+	background: #ec6041 url('../img/PlasmaLevels.png');
+}
+.w10b {
+	background: #ec6041;
+	color: white;
+}
+
+.w11 {
+	background: #ec6041 url('../img/HeartRate.png');
+}
+.w11b {
+	background: #ec6041;
+	color: white;
+}
+
+.w12 {
+	background: #ec6041 url('../img/Calories.png');
+}
+.w12b {
+	background: #ec6041;
+	color: white;
+}
+
+body {
+	-webkit-perspective: 800px;
+}
+
+.wrap {
+	transition: -webkit-transform .5s ease-in;
+	-webkit-transform-style: preserve-3d;
+}
+
+.wrap div {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+
+.side-a {
+	z-index: 100;
+}
+
+.side-b {
+	-webkit-transform: rotateY(-180deg);
+}
+
+.wrap:hover {
+	-webkit-transform: rotateY(-.5turn);
+	-webkit-transition-delay: .3s;
+}
+
+.wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.inside-wrapper {
+	margin: 0 auto;
+}
+
+.wrap div {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background-position: 50% 50%;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	box-shadow: 0 12px 20px -10px rgba(0,0,0,.43);
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px rgba(0,0,0,.3);
+	font: bold 3em sans-serif;
+}
+
+
+.selected {
+	border: 5px solid #fff;
+	padding: 5px;
+	border-radius: 100%;
+	margin-top: 20px;
+	height: 180px !important;
+	width: 180px !important;
+}
+
+.selected div {
+	width: 180px !important;
+	height: 180px !important;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+  border-radius: 4px;
+  padding: 7px 30px 7px 30px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+.btn:hover,
+.btn:focus {
+  outline: none;
+  color: #ffffff;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 60px 0px 0px 0px;
+	width: 100%;
+	font-family: 'CaviarDreams', sans-serif; 
+}
+
+h2 {
+	font-family: 'CaviarDreams', Arial, sans-serif;
+	font-size: ;
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'CaviarDreams', Arial, sans-serif;
+}
+
+p {
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	margin: 7px 0px 0px 0px;
+	padding: 0px 12px 0px 12px;
+	color: #f4f4f4;
+}
+
+hr {
+	height: 1px;
+	margin: 6px 12px 2px 12px;
+	border: none;
+	background: white;
+}
+
+@font-face{ 
+	font-family: 'CaviarDreams';
+	src: url('../fonts/CaviarDreams-webfont.eot');
+	src: url('../fonts/CaviarDreams-webfont.eot?iefix') format('eot'),
+	     url('../fonts/CaviarDreams-webfont.woff') format('woff'),
+	     url('../fonts/CaviarDreams-webfont.ttf') format('truetype'),
+	     url('../fonts/CaviarDreams-webfont.svg') format('svg');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+.close {
+	border: none;
+	width: 80px;
+	background-color: #4f99b6;
+	padding: 10px;
+	margin-top: 20px !important;
+}
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alviss App</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+	
+	<script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+	<div class="nav">
+		<img class="logo" src="img/alviss-white.svg">
+		<div class="username">
+			<img src="img/michaelCollins.jpg">
+			<p>
+				Michael Collins
+			</p>
+			<span class="arrow"></span>
+		</div>
+	</div>
+
+	<section class="main">
+		<div class="available">
+			<div class="btn-wrapper">
+				<button class="btn sync md-trigger" data-modal="modal-1"><h2>SYNC</h2></button>
+			</div>
+			<p class="syncText">Select the widget you would like to add.</p>
+			<ul class="cf">
+				<li class="wrap">
+					<div class="side-a w1"></div>
+					<div class="side-b w1b">
+						<h1>Personal Calendar</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w2"></div>
+					<div class="side-b w2b">
+						<h1>Family Events</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w3"></div>
+					<div class="side-b w3b">
+						<h1>GMT</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w4"></div>
+					<div class="side-b w4b">
+						<h1>Native Time</h1>
+						<hr>
+						<p>Stay up to date. Sync your watch to the time zone of your choosing.</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w5"></div>
+					<div class="side-b w5b">
+						<h1>Music</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w6"></div>
+					<div class="side-b w6b">
+						<h1>Sleep Schedule</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w7"></div>
+					<div class="side-b w7b">
+						<h1>Timer</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w8"></div>
+					<div class="side-b w8b">
+						<h1>Weather</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w9"></div>
+					<div class="side-b w9b">
+						<h1>Oxygen Level</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w10"></div>
+					<div class="side-b w10b">
+						<h1>Plasma Level</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w11"></div>
+					<div class="side-b w11b">
+						<h1>Heart Rate</h1>
+						<hr>
+						<p>See the last reading from a number of compatible third party sources.</p>
+					</div>
+				</li>
+				<li class="wrap">
+					<div class="side-a w12"></div>
+					<div class="side-b w12b">
+						<h1>Calories</h1>
+						<hr>
+						<p>Coming Soon</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- MODAL -->
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content">
+			<h3>Alviss Successfully Synced</h3>
+			<div>
+				<p>The widgets you seleted should now appear on your pebble!</p>
+				<button class="md-close sync close">Close</button>
+			</div>
+		</div>
+	</div>
+	<div class="md-overlay"></div>
+
+			<script src="js/jquery-1.11.0.min.js"></script>
+	<script>
+		$('li').click(function () {
+			$(this).toggleClass('selected');
+		});
+	</script>
+	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill 
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js"></script>
+		-->
+</body>
+</html>
