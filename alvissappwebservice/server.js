@@ -95,27 +95,39 @@ app.get('/gmt', function(request, response)
 			});
 	});
 
-app.get('/oauth2/:user', function(request, response)
+app.get('/oauth2', function(request, response)
 	{
-		console.log('GET:  /oauth2/' + request.params.user + '?code=' + request.query.code);
-		oauthClients[request.params.user].getToken(request.query.code, function(error, tokens)
+		console.log('GET:  /oauth2?' + request.query.state + '&code=' + request.query.code);
+		oauthClients[request.query.state].getToken(request.query.code, function(error, tokens)
 			{
 				console.log(tokens);
-				oauthClients[request.params.user].setCredentials(tokens);
+				oauthClients[request.query.state].setCredentials(tokens);
 				response.send();
 			});
 	});
 
-app.get('/calendar-auth/:user', function(request, response)
+app.get('/calendar-auth', function(request, response)
 	{
-		console.log('/calendar-auth/' + request.params.user);
+		console.log('/calendar-auth?user=' + request.query.user);
 		
-		var client = new OAuth2('444649227197-0o87frrvtmv9keaeub4pljvmhfpt38p6.apps.googleusercontent.com', '1-NWEyFlfW3IaLjvgDQl1_kM', 'http://' + request.headers.host + '/oauth2/' + request.params.user);
-		oauthClients[request.params.user] = client;
+		if (request.headers.host === 'alvissapp.com:980')
+		{
+			var client = new OAuth2('444649227197-sqe56o2imkpf1t631qtkblrv1t932bjn.apps.googleusercontent.com', 'Z8lrJELkOrHs_Og_8de_CMm5', 'http://' + request.headers.host + '/oauth2');
+		}
+		else if (request.headers.host === 'localhost:980')
+		{
+			var client = new OAuth2('444649227197-m2gqp9dufjhptt26fa9n7sjepbqj3udd.apps.googleusercontent.com', 'NUyyOB4wagOa4NY3HCSIbpRg', 'http://' + request.headers.host + '/oauth2');
+		}
+		else
+		{
+			var client = new OAuth2('444649227197-0o87frrvtmv9keaeub4pljvmhfpt38p6.apps.googleusercontent.com', '1-NWEyFlfW3IaLjvgDQl1_kM', 'http://' + request.headers.host + '/oauth2');
+		}
+		oauthClients[request.query.user] = client;
 		
 		var url = client.generateAuthUrl({
 			access_type: 'offline',
-			scope: 'https://www.googleapis.com/auth/calendar'
+			scope: 'https://www.googleapis.com/auth/calendar',
+			state: request.query.user
 		});
 		response.redirect(url);
 	});
