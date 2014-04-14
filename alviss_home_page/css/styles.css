@@ -1,0 +1,252 @@
+.clear {
+	clear: both;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+.logo{
+	max-width:400px;
+	width:25%;
+	min-width:200px;
+	margin-top:30px;
+	margin-left:30px;
+}
+
+#line {
+	background-image:url("../img/stardust.png");
+	background-repeat:repeat-x;
+	height:20px;
+	margin-bottom:0px;
+}
+
+#hero {
+	width:100%;
+	margin:-1px;
+	top:-100px;
+	height:900px;
+	background-image:url("../img/hero.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-top:660px;
+	padding-left:35%;
+
+}
+
+#hero h1 {
+	font-size:50px;
+	text-align:right;
+	color:#4e7fb9;
+	font-weight:200;
+	font-family:'Josefin Sans', Helvetica, sans-serif;
+	padding-right:40px;
+
+}
+
+#hero p {
+	color:e9e6e6;
+	text-align:right;
+	font-size:25px;
+	font-family:Helvetica, sans-serif;
+	font-weight:200;
+	padding:10px 42px 40px;
+	margin-top:-25px;
+}
+
+#hero img {
+	width:100%;
+}
+
+#widget_info {
+	background-image:url("../img/teal_360.png");
+	background-repeat:repeat;
+	width:100%;
+	margin:0px;
+	padding: 120px 60px 80px;
+	text-align:justify;
+}
+
+#widget_info h1 {
+	font-size:40px;
+	font-family:'Josefin Sans', Helvetica, sans-serif;
+	color:white;
+	margin:0px;
+	font-weight:300;
+	padding-top:-30px;
+	margin-left:-40px;
+	margin-top:-10px;
+}
+
+#widget_info p {
+	font-size:20px;
+	font-family:sans-serif, Helvetica, Arial;
+	color:white;
+	font-weight:300;
+	margin-top:-10px;
+	padding-bottom:30px;
+	margin-left:-40px;
+}
+
+.special {
+	padding-bottom:28px;
+}
+
+.position {
+	margin-top:-40px;
+	max-width:90%;
+}
+
+.space {
+	margin-left:80px;
+	width:275px;
+	margin-top:-40;
+}
+
+#widget_info h3 {
+	text-align:center;
+	font-size:80px;
+	color:e9e6e6;
+	font-family:'Josefin Sans', Helvetica, sans-serif;
+	font-weight: 300;
+	padding-bottom:70px;
+	margin-top:-50px;
+}
+
+#infographic {
+	background-color:#89025C;
+	width:100%;
+	padding: 120px 0;
+	background-image:url("../img/teal_360.png");
+	background-repeat:repeat;
+}
+
+#infographic h1 {
+	font-size:32px;
+	text-align:left;
+	color:white;
+	text-align:center;
+	font-family:'Josefin Sans', Helvetica, sans-serif;
+}
+
+#infographic p {
+	font-size:15px;
+	font-family:sans-serif, Helvetica;
+	color:white;
+	text-align:center;
+	font-weight:300;
+	padding-bottom:5px;
+}
+
+#infographic img {
+	margin:0px auto;
+	width:450px;
+
+}
+
+#infographic h3 {
+	text-align:center;
+	font-size:80px;
+	color:white;
+	font-family:'Josefin Sans', Helvetica, sans-serif;
+	font-weight: 300;
+	padding-bottom:70px;
+	margin-top:-50px;
+}
+
+.blue {
+	background-color:#4e7fb9;
+	color:white;
+	border-radius: 5px;
+	font-size:25px;
+	font-family:'Josefin Sans', Helvetica, sans-serif;
+	margin-top:-25px;
+	margin-left:5px;
+
+}
+
+#widget_info a{
+	color:white;
+}
+
+
+#about {
+	background-color:white;
+	width:100%;
+	margin:0px;
+	padding: 120px 60px 80px ;
+	text-align:justify, center;
+	background-image:url("img/stardust.png");
+	background-repeat: no-repeat;
+}
+
+#about p {
+	font-size:20px;
+	font-family:sans-serif, Helvetica;
+	margin-right:60px;
+	text-align:left;
+	color:black;
+	font-weight:300;
+	padding:0px 0px 30px;
+	margin-top:-7px;
+
+}
+
+#about h1 {
+	font-family:'Josefin Sans', Helvetica, sans-serif;
+	font-size:30px;
+	padding-bottom:0px;
+	font-weight:600;
+	line-height: 1.3em;
+
+}
+
+#about img {
+	width:900px;
+}
+
+#about h3 {
+	text-align:center;
+	font-size:80px;
+	color:#4e7fb9;
+	font-family:'Josefin Sans', Helvetica, sans-serif;
+	font-weight: 300;
+	padding-bottom:70px;
+	margin-top:-50px;
+
+}
+
+#footer {
+	width:100%;
+	text-align:center;
+	color:white;
+	font-weight:300;
+	font-family:sans-serif,Helvetica;
+	background-color:#1E1E1E;
+	padding:10px 20px;
+}
+
+#footer h1 {
+	font-size:20px;
+	padding:20px 40px 10px;
+	font-family:Helvetica, sans-serif;
+	font-weight:200;
+}
+
+#footer a {
+	color:#4e7fb9;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color:e9e6e6;
+}
+
+#footer p {
+	margin-top:-20px;
+}
+
+@media screen and (max-width: 900px) {
+	#hero {padding-top: 497px}
+}
+
+
+
